@@ -26,6 +26,7 @@
             }//validar que la página de layout existe
 
 
-            include_once($pageLayoutPath);
+            $page = __DIR__.'/../page.php';
+            include_once($page);
         }
     }

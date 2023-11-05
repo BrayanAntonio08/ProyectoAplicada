@@ -1,14 +1,14 @@
 <?php
     class PageController extends Controller{
 
-        private $view;
-
-        public function __construct(){
-        }
 
         public function Home(){
+            $sesionClosed = false; //!isset($_SESSION["user"])
+            if($sesionClosed){
+                ROUTER->redirect('/Authentication/login');
+            }
 
-            $this->render([], 'site');
+            $this->render();
         }
 
         public function Mostrar()
