@@ -1,0 +1,25 @@
+.body-style {
+    background-color: #dfebbd; 
+    color: #ffffff;
+}
+
+h1 {
+    color: #000000;
+}
+
+.navbar{
+    background-color: #71a9ce; 
+}
+
+.new-title {
+    color: #000000;
+    font-weight: bold;
+}
+
+p {
+    color: #000000;
+}
+
+.date {
+    color: #000000;
+}

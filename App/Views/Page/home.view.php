@@ -1,8 +1,8 @@
-<div class="container bg-light overflow-hidden text-center">
+<div class="container overflow-hidden text-center">
     <div class="row gy-4">
         <div class="col-7"> <!--Empieza columna anuncios-->
-            <div class="p-3 p-2 border border-success p-2 mb-2">
-                <div class="p-2 border border-success p-2 mb-2" style="--bs-border-opacity: .5;">Anuncio 1</div>
+            <div class="p-3 border border-success p-2 mb-2 anuncios">
+                <div class="border border-success p-2 mb-2 new-title" style="--bs-border-opacity: .5;">Anuncio 1</div>
                 <div class="grid">
                     <div>
                         <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -10,10 +10,10 @@
                             delectus nulla porro.</p>
                     </div>
                 </div>
-                <div class="text-end small">fecha</div>
+                <div class="text-end small date">fecha</div>
             </div>
             <div class="p-3 p-2 border border-success p-2 mb-2">
-                <div class="p-2 border border-success p-2 mb-2" style="--bs-border-opacity: .5;">Anuncio 2</div>
+                <div class="p-2 border border-success p-2 mb-2 new-title" style="--bs-border-opacity: .5;">Anuncio 2</div>
                 <div class="grid">
                     <div>
                         <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -22,10 +22,10 @@
                             est dolorem dignissimos voluptates?</p>
                     </div>
                 </div>
-                <div class="text-end small">fecha</div>
+                <div class="text-end small date">fecha</div>
             </div>
             <div class="p-3 p-2 border border-success p-2 mb-2">
-                <div class="p-2 border border-success p-2 mb-2" style="--bs-border-opacity: .5;">Anuncio 3</div>
+                <div class="p-2 border border-success p-2 mb-2 new-title" style="--bs-border-opacity: .5;">Anuncio 3</div>
                 <div class="grid">
                     <div>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -35,10 +35,10 @@
                             magnam nobis minima quas?</p>
                     </div>
                 </div>
-                <div class="text-end small">fecha</div>
+                <div class="text-end small date">fecha</div>
             </div>
             <div class="p-3 p-2 border border-success p-2 mb-2">
-                <div class="p-2 border border-success p-2 mb-2" style="--bs-border-opacity: .5;">Anuncio 4</div>
+                <div class="p-2 border border-success p-2 mb-2 new-title" style="--bs-border-opacity: .5;">Anuncio 4</div>
                 <div class="grid">
                     <div>
                         <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perspiciatis sint,
@@ -48,7 +48,7 @@
                             itaque maiores quas labore officiis enim alias accusantium ratione.</p>
                     </div>
                 </div>
-                <div class="text-end small">fecha</div>
+                <div class="text-end small date">fecha</div>
             </div>
         </div><!--Termina columna anuncios-->
         <div class="col-3">
