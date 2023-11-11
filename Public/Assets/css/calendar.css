@@ -1,0 +1,51 @@
+ol{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 0;
+    color: black;
+}
+.first-day-january{
+    grid-column-start: 7;
+}
+.first-day-february{
+    grid-column-start: 3;
+}
+.first-day-march{
+    grid-column-start: 3;
+}
+.first-day-april{
+    grid-column-start: 6;
+}
+.first-day-may{
+    grid-column-start: 1;
+}
+.first-day-june{
+    grid-column-start: 4;
+}
+.first-day-july{
+    grid-column-start: 6;
+}
+.first-day-august{
+    grid-column-start: 2;
+}
+.first-day-september{
+    grid-column-start: 5;
+}
+.first-day-october{
+    grid-column-start: 7;
+}
+.first-day-november{
+    grid-column-start: 3;
+}
+.first-day-december{
+    grid-column-start: 5;
+}
+.day-name{
+    color: black;
+    font-weight: bold; 
+}
+.month{
+    background-color: #71a9ce; 
+    color: black;
+}

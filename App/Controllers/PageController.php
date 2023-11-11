@@ -16,5 +16,8 @@
             ROUTER->redirect('/Authentication/login');
         }
 
+        public function calendar() {
+            $this->render();
+        }
 
     }
