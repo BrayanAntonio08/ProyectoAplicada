@@ -1,6 +1,6 @@
 .body-style {
     background-color: #dfebbd; 
-    color: #ffffff;
+    /* color: #ffffff; */
 }
 
 h1 {
@@ -20,6 +20,11 @@ p {
     color: #000000;
 }
 
+
 .date {
+    color: #000000;
+}
+
+.form-label{
     color: #000000;
 }
