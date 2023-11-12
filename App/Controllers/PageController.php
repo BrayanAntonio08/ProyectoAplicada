@@ -8,7 +8,12 @@
                 ROUTER->redirect('/Authentication/login');
             }
 
-            $this->render();
+            require_once(MODEL_PATH.'User.model.php');
+            $model = new UserModel();
+            $data = [
+                "users"=>$model->getAll()
+            ];
+            $this->render('', $data);
         }
 
         public function Mostrar()

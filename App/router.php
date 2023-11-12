@@ -24,7 +24,7 @@
             
             define('VIEW', $this->action);
 
-            $ruta = __DIR__.'/Controllers/'.$this->controller.'.php';
+            $ruta = CONTROLLER_PATH.$this->controller.'.php';
             if(!file_exists($ruta)){
                 trigger_error('No hay controlador para atender la petición',E_USER_ERROR);
             }

@@ -10,6 +10,7 @@
     <script src="<?= URL_PATH?>/Public/bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+    
     <?php
         /**
          * Con esto se carga el body completo de la página, de modo 
