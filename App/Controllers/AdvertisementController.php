@@ -19,9 +19,9 @@ class AdvertisementController extends Controller
         $error = $model->createAdvertisement($title, $description);
 
         $info = array();
-        if ($error[0] != '00000') {
+        if ($error == 0) {
             $info['mensaje'] = 'Fallo al crear el anuncio';
-        }else if($error[0] == '00000'){
+        }else{
             $info['mensaje'] = 'Registro exitoso';
         }
 

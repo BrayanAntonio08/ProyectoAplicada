@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="<?= URL_PATH?>/Public/bootstrap/css/bootstrap.min.css">
     <script src="<?= URL_PATH?>/Public/Assets/js/scripts.js"></script>
     <script src="<?= URL_PATH?>/Public/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body class="body-style">
     <?php
@@ -18,6 +19,10 @@
          * layouts del sistema
          */
         include_once($pageLayoutPath);
+
+        if(isset($data['mensaje'])){
+            include_once(VIEW_PATH.'Common/Message.component.php');
+        }
     ?>
 </body>
 </html>

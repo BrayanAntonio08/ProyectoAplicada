@@ -20,12 +20,13 @@ class PageController extends Controller
             foreach ($info as $key => $value) {
                 $data[$key] = $value;
             }
+            unset($_SESSION['redirect-info']);
         }
 
         require_once(MODEL_PATH . 'Advertisement.model.php');
         $adModel = new AdvertisementModel();
         $data["anuncios"] = $adModel->getAllAdvertisement();
-        
+
         $this->render('', $data);
     }
 
