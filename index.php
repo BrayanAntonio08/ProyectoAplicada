@@ -7,4 +7,5 @@
     se hace un llamado al router para que 
     atienda la peticion
     */
-    ROUTER->run();
+    $router = new Router();
+    $router->run();

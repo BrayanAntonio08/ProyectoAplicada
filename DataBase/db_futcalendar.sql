@@ -27,6 +27,29 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `tb_anuncio`
 --
 
+CREATE TABLE `tb_evento` (
+  `id` int(11) NOT NULL,
+  `titulo` varchar(300) NOT NULL,
+  `fecha` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+ALTER TABLE `tb_evento`
+  ADD PRIMARY KEY (`id`);
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_retornar_eventos`()
+Select * from tb_evento$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_search_event`(IN `titulo` VARCHAR(300))
+Select * from tb_evento where titulo like tb_evento.titulo$$
+DELIMITER ;
+
+DELIMITER $$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_create_event`(IN `_titulo_param` VARCHAR(300), IN `_fecha_param` DATE)
+insert into tb_evento (titulo,fecha) values (titulo_param,fecha_param)$$
+DELIMITER ;
+
 CREATE TABLE `tb_anuncio` (
   `id` int(11) NOT NULL,
   `titulo` varchar(100) NOT NULL,

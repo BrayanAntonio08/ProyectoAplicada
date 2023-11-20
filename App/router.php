@@ -64,4 +64,5 @@ class Router
 
 //Se define una constante general accesible a los diferentes
 //objetos
-define('ROUTER', new Router());
+// define('ROUTER'= new Router());
+// define('ROUTER', new Router());

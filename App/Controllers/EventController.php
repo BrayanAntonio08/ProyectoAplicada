@@ -1,7 +1,7 @@
 <?php
 
-require_once(MODEL_PATH."Advertisement.model.php");
-class AdvertisementController extends Controller
+require_once(MODEL_PATH."Event.model.php");
+class EventController extends Controller
 {
 
     /**
@@ -11,12 +11,12 @@ class AdvertisementController extends Controller
     public function Create()
     {
         //obtener los datos
-        $title = $_POST["title"];
-        $description = $_POST["description"];
+        $title = $_POST["titulo_param"];
+        $fecha = $_POST["fecha_param"];
 
         //logica para crear un anuncio
-        $model = new AdvertisementModel();
-        $error = $model->createAdvertisement($title, $description);
+        $model = new EventModel();
+        $error = $model->createEvent($title, $fecha);
 
         $info = array();
         if ($error == 0) {

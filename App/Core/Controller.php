@@ -57,4 +57,16 @@
             $page = __DIR__.'/../page.php';
             include_once($page);
         }
+
+            public function redirect($url, $info = null)
+
+    {
+        $newURL = URL_PATH . $url;
+
+        if (!is_null($info)) {
+            $_SESSION['redirect-info'] = $info; //se guarda la información antes de redirigir la página
+        }
+        header('Location: ' . $newURL);
+        exit;
+    }
     }

@@ -32,7 +32,8 @@ class PageController extends Controller
 
     public function Mostrar()
     {
-        ROUTER->redirect('/Authentication/login');
+               
+        $this->redirect('/Authentication/login');
     }
 
     public function calendar()
