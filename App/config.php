@@ -25,3 +25,7 @@ define('DB_HOST', 'localhost');
 define('DB_NAME', 'db_futcalendar');
 define('DB_USER', 'root');
 define('DB_PASS', '');
+
+function ROUTE($controller, $action) : string {
+    return URL_PATH .'/'. strtolower($controller) .'/'. strtolower($action);
+}

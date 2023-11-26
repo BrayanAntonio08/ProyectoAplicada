@@ -1,3 +1,16 @@
+<?php
+include_once(__DIR__ . "/components/create-event.component.php");
+if(isset($data['eventos'])) 
+{
+    Console::log($data['eventos']);
+}
+Console::log(null);
+?>
+<div class="row">
+    <button class="btn btn-primary col-2" data-bs-toggle="modal" data-bs-target="#<?= $modalId ?>">
+        Crear evento
+    </button>
+</div>
 <div class="container text-center">
     <div class="row row-cols-3">
         <div class="col">

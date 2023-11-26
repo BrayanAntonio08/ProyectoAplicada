@@ -11,8 +11,8 @@ class EventController extends Controller
     public function Create()
     {
         //obtener los datos
-        $title = $_POST["titulo_param"];
-        $fecha = $_POST["fecha_param"];
+        $title = $_POST["title_param"];
+        $fecha = $_POST["date_param"];
 
         //logica para crear un anuncio
         $model = new EventModel();
@@ -25,6 +25,6 @@ class EventController extends Controller
             $info['mensaje'] = 'Registro exitoso';
         }
 
-        $this->redirect('/Page/Home', $info);
+        $this->redirect('/Page/Calendar', $info);
     }
 }

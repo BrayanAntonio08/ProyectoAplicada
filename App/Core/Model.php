@@ -39,6 +39,7 @@ class Model
     {
         $queryString = 'CALL sp_create_' . $this->entity . '(' . implode(', ', $data) . ')';
 
+        echo $queryString;        
         $query = $this->db->prepare($queryString);
         $query->execute();
 

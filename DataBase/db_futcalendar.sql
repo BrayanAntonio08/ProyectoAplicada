@@ -36,7 +36,7 @@ ALTER TABLE `tb_evento`
   ADD PRIMARY KEY (`id`);
 
 DELIMITER $$
-CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_retornar_eventos`()
+CREATE DEFINER=`root`@`localhost` PROCEDURE `sp_get_eventos`()
 Select * from tb_evento$$
 DELIMITER ;
 

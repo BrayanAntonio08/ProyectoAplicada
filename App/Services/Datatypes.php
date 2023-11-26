@@ -12,3 +12,7 @@ function bit($valor){
         return "b'0'";
     }
 }
+
+function sql_date($valor){
+    return "'" . $valor . "'";
+}

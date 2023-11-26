@@ -1,16 +1,17 @@
 <?php
 
+
 class Eventmodel extends Model
 {
     public function __construct() {
-        //Se define la entidad que se trabajará en la BD
-        parent::__construct('Event');
+        //Se define la entidad que se trabajarï¿½ en la BD
+        parent::__construct('event');
     }
 
     public function createEvent($title, $fecha){
         $data = [
             varchar($title),
-            date($fecha)
+            sql_date($fecha)
         ];
         return $this->create($data);
     }
