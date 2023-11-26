@@ -1,4 +1,4 @@
-<header class="container navbar justify-content-center mb-4">
+<header class="navbar justify-content-center mb-4">
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <a class="navbar-brand" href="<?=ROUTE('page','home')?>">FutCalendar</a>
