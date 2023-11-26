@@ -1,5 +1,5 @@
 .body-style {
-    background-color: #dfebbd; 
+    background-color: #566580; 
     /* color: #ffffff; */
 }
 
@@ -8,7 +8,11 @@ h1 {
 }
 
 .navbar{
-    background-color: #71a9ce; 
+    background-color: #17162d; 
+    
+}
+.nav-link{
+    color: white !important;
 }
 
 .new-title {
