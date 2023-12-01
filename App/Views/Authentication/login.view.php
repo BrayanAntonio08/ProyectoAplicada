@@ -6,7 +6,7 @@
             justify-content-center 
             border border-info rounded 
             col-lg-5 col-md-6 col-sm-9 
-            m-3 p-4" method="POST" action="/Authentication/LogUser">
+            m-3 p-4" method="POST" action="<?= URL_PATH ?>/Authentication/logUser">
             <h3 class="text-center">Iniciar sesión</h3>
 
             <div class="mt-3">
@@ -20,9 +20,9 @@
             </div>
 
             <div class="d-flex justify-content-center">
-                <input type="button" value="Iniciar Sesión" class="btn btn-primary my-4">
+                <input type="submit" value="Iniciar Sesión" class="btn btn-primary my-4">
             </div>
-
+                
             <p class="text-center">¿No has creato tu cuenta? <a href="<?=URL_PATH?>/Authentication/signin">Regístrate aquí</a></p>
         </form>
     </div>

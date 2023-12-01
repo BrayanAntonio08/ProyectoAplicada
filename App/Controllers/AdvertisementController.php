@@ -25,6 +25,6 @@ class AdvertisementController extends Controller
             $info['mensaje'] = 'Registro exitoso';
         }
 
-        ROUTER->redirect('/Page/Home', $info);
+        $this->redirect('/Page/Home', $info);
     }
 }
