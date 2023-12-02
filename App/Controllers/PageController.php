@@ -7,8 +7,8 @@ class PageController extends Controller
 
     public function Home()
     {
-        $sesionClosed = false; //!isset($_SESSION["user"])
-        if ($sesionClosed) {
+        
+        if (!isset($_SESSION["user"])) {
             $this->redirect('/Authentication/login');
         }
 
